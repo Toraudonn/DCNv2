@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-from __future__ import absolute_import
-from __future__ import print_function
-from __future__ import division
 
 import math
 import torch
@@ -10,7 +7,7 @@ from torch.autograd import Function
 from torch.nn.modules.utils import _pair
 from torch.autograd.function import once_differentiable
 
-import _ext as _backend
+from . import _ext as _backend
 
 
 class _DCNv2(Function):
